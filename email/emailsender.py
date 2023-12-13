@@ -11,7 +11,7 @@ import smtplib #we import ssl and smtplib protocol to send mail to any internet 
 email_sender = "bekathunder215@thunder.com"
 email_password = "password123!"
 #the email reciever you can get from website temp-mail.org
-email_receiver = "someone??" 
+email_receiver = "temporarymail@someone.com??" 
 subject = "This is a subject of the email"
 body = """\
     When you open the email, you will see the body object.\
@@ -22,7 +22,7 @@ body = """\
 eml = email.message.EmailMessage()
 eml["From"] = email_sender
 eml["To"] = email_receiver
-eml["subject"] = subject
+eml["Subject"] = subject
 eml.set_content(body)
 
 context = ssl.create_default_context() 
